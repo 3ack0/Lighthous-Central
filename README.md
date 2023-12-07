@@ -1,1 +1,1 @@
-# Lighthous-Central
+# Lighthouse-Central
