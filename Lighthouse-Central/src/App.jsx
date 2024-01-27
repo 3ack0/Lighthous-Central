@@ -1,15 +1,20 @@
 import React from 'react'
-import GetPoolCard from './components/PoolCard'
+import { Routes, Route } from 'react-router-dom';
 import './App.css'
+import Home from './components/Home.jsx'
+import Navbar from './components/Navbar.jsx'
+import Dashboard from './components/Dashboard.jsx'
 
 function App() {
 
   return (
-   <div>
-    <h1> Hello Everyone! </h1>
-    <GetPoolCard name="NCC" manager="Scarlett" numGuards="5"/>
-    <GetPoolCard name="BCC" manager="Bruce" numGuards="6"/>
-   </div>
+      <div className='App'>
+        <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/Dashboard" element={<Dashboard />} />
+            </Routes>
+      </div>
   )
 }
 
