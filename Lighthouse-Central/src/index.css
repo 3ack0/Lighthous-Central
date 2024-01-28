@@ -13,6 +13,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.pool-card {
+	min-width: 50rem;
+	border: black solid 3px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.pool-card-heading {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pool-card-details-container {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
 .navbar {
 	background-color: blue;
 	width: 100%;
